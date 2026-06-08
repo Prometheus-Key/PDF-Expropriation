@@ -1,0 +1,2 @@
+# PDF-Expropriation
+webclassのPDFを強制的に標準ビューワーで開かせてダウンロードおよび印刷を可能にします。
