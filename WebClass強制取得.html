@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>WebClass PDF変換ツール 登録ページ</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; background-color: #f4f5f7; }
+        .btn { display: inline-block; padding: 15px 30px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px; cursor: move; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn:hover { background-color: #0056b3; }
+        ol { text-align: left; display: inline-block; margin-top: 30px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <h1>WebClass PDF変換ツール</h1>
+    <p>下の青いボタンを、ブラウザの<b>ブックマークバー（上のバー）へドラッグ＆ドロップ</b>してください。</p>
+
+    <a class="btn" href="javascript:(function(){var f=document.querySelector('iframe');var src=f?f.src:location.href;if(src.includes('web/viewer.html?file=')){var n=src.replace('web/viewer.html?file=../','');location.href=n;}else{alert('PDFのビューワーが見つかりませんでした。WebClassの「別ウインドウで開く」を押した後の画面で実行してください。');}})();">WebClass PDF変換</a>
+
+    <br><br>
+    <ol>
+        <li>「Ctrl + Shift + B」（Macは「Cmd + Shift + B」）でブックマークバーを出します。</li>
+        <li>上の青いボタンを、そのバーに向かってズリズリと引っ張って落とします。</li>
+        <li>WebClassで資料を「別ウインドウ」で開いたあと、登録したボタンを押せば標準PDFになります。</li>
+    </ol>
+</body>
+</html>
